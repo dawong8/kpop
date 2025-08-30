@@ -12,8 +12,9 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background: url('https://t4.ftcdn.net/jpg/11/07/08/45/360_F_1107084586_eiPt1HU5e2NIwjYuRaGu8Bs5m4dN61QV.jpg');
       color: white;
+      background-size: cover;
     }
 
     .gallery-container {
@@ -25,34 +26,36 @@
 
     .gallery {
       display: inline-flex;
-      animation: scroll 20s linear infinite;
+      animation: scroll 180s linear infinite;
     }
 
     .gallery-item {
-      position: relative;
-      overflow: hidden;
-      width: 300px;
-      height: 80vh;
-      margin: 0 10px;
-      transform: skew(-15deg); /* diagonal rectangle */
-      border-radius: 10px;
-      background: #333;
-      flex-shrink: 0;
-      cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 74vh;
+        margin: 0 2px;
+        border-radius: 10px;
+        background: #333;
+        flex-shrink: 0;
+        cursor: pointer;
     }
 
     .gallery-item img {
-      width: 187%;  /* zoomed in by default */
-      height: 180%;
+      width: 100%;
+      height: 100%;
+      display: block;
       object-fit: cover;
-      transform: skew(15deg) scale(1.1); /* counter-skew and fill the diagonal */
-      transition: transform 0.5s ease;
+      object-position: bottom center;    /* keep the bottom in view */
+      transform-origin: bottom center;   /* zoom from the bottom */
+      transition: transform 0.5s ease, opacity 0.5s ease;
     }
 
     .gallery-item:hover img {
-      transform: skew(15deg) scale(1.3); /* slightly more zoom on hover */
+      transform: scale(1.35);/* still zooms from the bottom */
       opacity: .85;
     }
+
 
     /* Infinite scroll animation */
     @keyframes scroll {
@@ -68,20 +71,81 @@
   <div class="gallery-container">
     <div class="gallery">
       <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
+      <div class="gallery-item"><img src="./public/25&.png" alt="25&"></div>
+      <div class="gallery-item"><img src="./public/3wishes.png" alt="3wishes"></div>
+      <div class="gallery-item"><img src="./public/3x3.png" alt="3x3"></div>
+      <div class="gallery-item"><img src="./public/Heartgold.png" alt="Heartgold"></div>
+      <div class="gallery-item"><img src="./public/afterclass.png" alt="afterclass"></div>
+      <div class="gallery-item"><img src="./public/bopbop.png" alt="bopbop"></div>
+      <div class="gallery-item"><img src="./public/cherrysisters.png" alt="cherrysisters"></div>
+      <div class="gallery-item"><img src="./public/colorz.png" alt="colorz"></div>
+      <div class="gallery-item"><img src="./public/corixfinn.png" alt="corixfinn"></div>
+      <div class="gallery-item"><img src="./public/creamy.png" alt="creamy"></div>
+      <div class="gallery-item"><img src="./public/dreamday.png" alt="dreamday"></div>
+      <div class="gallery-item"><img src="./public/eclips3.png" alt="eclips3"></div>
+      <div class="gallery-item"><img src="./public/flowerbox.png" alt="flowerbox"></div>
+      <div class="gallery-item"><img src="./public/glitzy.png" alt="glitzy"></div>
+      <div class="gallery-item"><img src="./public/gyoon.png" alt="gyoon"></div>
+      <div class="gallery-item"><img src="./public/heartgoldk.png" alt="heartgoldk"></div>
+      <div class="gallery-item"><img src="./public/krush.png" alt="krush"></div>
+      <div class="gallery-item"><img src="./public/light.png" alt="light"></div>
+      <div class="gallery-item"><img src="./public/locket.png" alt="locket"></div>
+      <div class="gallery-item"><img src="./public/lunar.png" alt="lunar"></div>
+      <div class="gallery-item"><img src="./public/mintypop.png" alt="mintypop"></div>
+      <div class="gallery-item"><img src="./public/mist.png" alt="mist"></div>
+      <div class="gallery-item"><img src="./public/moonshine.png" alt="moonshine"></div>
+      <div class="gallery-item"><img src="./public/pika.png" alt="pika"></div>
+      <div class="gallery-item"><img src="./public/pikaclub.png" alt="pikaclub"></div>
+      <div class="gallery-item"><img src="./public/poku.png" alt="poku"></div>
+      <div class="gallery-item"><img src="./public/popumonster.png" alt="popumonster"></div>
+      <div class="gallery-item"><img src="./public/raven.png" alt="raven"></div>
+      <div class="gallery-item"><img src="./public/royalblue.png" alt="royalblue"></div>
+      <div class="gallery-item"><img src="./public/sodapop!.png" alt="sodapop!"></div>
+      <div class="gallery-item"><img src="./public/solorix.png" alt="solorix"></div>
+      <div class="gallery-item"><img src="./public/sos.png" alt="sos"></div>
+      <div class="gallery-item"><img src="./public/sp1.png" alt="sp1"></div>
+      <div class="gallery-item"><img src="./public/staygirls.png" alt="staygirls"></div>
+      <div class="gallery-item"><img src="./public/xoxo.png" alt="xoxo"></div>
+
 
 
       <!-- duplicate set for infinite loop illusion -->
       <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
-      <div class="gallery-item"><img src="./public/b1am3.png" alt="b1am3"></div>
+      <div class="gallery-item"><img src="./public/25&.png" alt="25&"></div>
+      <div class="gallery-item"><img src="./public/3wishes.png" alt="3wishes"></div>
+      <div class="gallery-item"><img src="./public/3x3.png" alt="3x3"></div>
+      <div class="gallery-item"><img src="./public/Heartgold.png" alt="Heartgold"></div>
+      <div class="gallery-item"><img src="./public/afterclass.png" alt="afterclass"></div>
+      <div class="gallery-item"><img src="./public/bopbop.png" alt="bopbop"></div>
+      <div class="gallery-item"><img src="./public/cherrysisters.png" alt="cherrysisters"></div>
+      <div class="gallery-item"><img src="./public/colorz.png" alt="colorz"></div>
+      <div class="gallery-item"><img src="./public/corixfinn.png" alt="corixfinn"></div>
+      <div class="gallery-item"><img src="./public/creamy.png" alt="creamy"></div>
+      <div class="gallery-item"><img src="./public/dreamday.png" alt="dreamday"></div>
+      <div class="gallery-item"><img src="./public/eclips3.png" alt="eclips3"></div>
+      <div class="gallery-item"><img src="./public/flowerbox.png" alt="flowerbox"></div>
+      <div class="gallery-item"><img src="./public/glitzy.png" alt="glitzy"></div>
+      <div class="gallery-item"><img src="./public/gyoon.png" alt="gyoon"></div>
+      <div class="gallery-item"><img src="./public/heartgoldk.png" alt="heartgoldk"></div>
+      <div class="gallery-item"><img src="./public/krush.png" alt="krush"></div>
+      <div class="gallery-item"><img src="./public/light.png" alt="light"></div>
+      <div class="gallery-item"><img src="./public/locket.png" alt="locket"></div>
+      <div class="gallery-item"><img src="./public/lunar.png" alt="lunar"></div>
+      <div class="gallery-item"><img src="./public/mintypop.png" alt="mintypop"></div>
+      <div class="gallery-item"><img src="./public/mist.png" alt="mist"></div>
+      <div class="gallery-item"><img src="./public/moonshine.png" alt="moonshine"></div>
+      <div class="gallery-item"><img src="./public/pika.png" alt="pika"></div>
+      <div class="gallery-item"><img src="./public/pikaclub.png" alt="pikaclub"></div>
+      <div class="gallery-item"><img src="./public/poku.png" alt="poku"></div>
+      <div class="gallery-item"><img src="./public/popumonster.png" alt="popumonster"></div>
+      <div class="gallery-item"><img src="./public/raven.png" alt="raven"></div>
+      <div class="gallery-item"><img src="./public/royalblue.png" alt="royalblue"></div>
+      <div class="gallery-item"><img src="./public/sodapop!.png" alt="sodapop!"></div>
+      <div class="gallery-item"><img src="./public/solorix.png" alt="solorix"></div>
+      <div class="gallery-item"><img src="./public/sos.png" alt="sos"></div>
+      <div class="gallery-item"><img src="./public/sp1.png" alt="sp1"></div>
+      <div class="gallery-item"><img src="./public/staygirls.png" alt="staygirls"></div>
+      <div class="gallery-item"><img src="./public/xoxo.png" alt="xoxo"></div>
     </div>
   </div>
 
